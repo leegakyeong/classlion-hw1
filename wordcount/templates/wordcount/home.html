@@ -1,0 +1,12 @@
+<style>
+    body { background-color: pink; }
+    h1, input { color: green; }
+</style>
+
+<h1>WORDCOUNT</h1>
+<a href="{% url 'about' %}">ABOUT</a>
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="10" name="fulltext"></textarea>
+    <br>
+    <input type="submit" value="Count!" />
+</form>
